@@ -21,6 +21,7 @@ Seguir os passos abaixo:
 - Executar se necessário o comando: npm install dentro da pasta **Livraria-APP** para reinstalar o módulos do node.
 - Para Subir a API, utilize o **VS Code** e execute o comando: dotnet watch run de dentro da pasta **Livraria-API**
 - Para Subir o Front, utilize o **VS Code** e execute o comando: ng serve de dentro da pasta **Livraria-APP**
+- No arquivo **appsettings.json** na pasta **Livraria-API** , foi definido na String de conexão o usuário: indra e senha: desafioindra . Terá que ser alterado para um usuário já existente ou criar este profile no postgres.
 - Acessando o Swagger :http://localhost:5000/swagger/index.html
 - Acessando o Front: http://localhost:4200/
 
