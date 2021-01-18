@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Livraria-API</name>
+    </assembly>
+    <members>
+        <member name="M:Livraria.API.Controllers.AutorController.Get">
+            <summary>
+            Recupera todos os Autores e seus respectivos livros
+            </summary>
+        </member>
+        <member name="M:Livraria.API.Controllers.AutorController.Get(System.Int32)">
+            <summary>
+            Recupera um Autor e seus respectivos livros
+            </summary>
+        </member>
+        <member name="M:Livraria.API.Controllers.AutorController.Post(Livraria.API.Model.Autor)">
+             <summary>
+             Inseri um novo Autor
+             </summary>
+             <remarks>
+             Exemplo:
+            
+                 Copiar este modelo de Json ao Clicar no Try it out
+                 {
+                     "nome": "Nome Atualizado",
+                     "sobreNome": "Sobre Nome Atualizado",
+                     "pais": "Bélgica",
+                 }
+            
+             </remarks>
+             <response code="200">Retorna o novo item criado</response>
+        </member>
+        <member name="M:Livraria.API.Controllers.AutorController.Put(System.Int32,Livraria.API.Model.Autor)">
+             <summary>
+             Atualiza o Autor
+             </summary>
+             <remarks>
+             Exemplo:
+            
+                 Copiar este modelo de Json ao Clicar no Try it out
+                 {
+                     "id": 1
+                     "nome": "Nome Atualizado",
+                     "sobreNome": "Sobre Nome Atualizado",
+                     "pais": "Bélgica",
+                 }
+            
+             </remarks>
+             <response code="200">Retorna o novo item criado</response>
+        </member>
+        <member name="M:Livraria.API.Controllers.LivrosController.Get">
+            <summary>
+            Recupera todos os livro com seus respectivos autores
+            </summary>
+        </member>
+        <member name="M:Livraria.API.Controllers.LivrosController.GetById(System.Int32)">
+            <summary>
+            Recupera um livro pelo ID com seus respectivos autores
+            </summary>
+        </member>
+        <member name="M:Livraria.API.Controllers.LivrosController.Post(Livraria.API.Model.Livro)">
+             <summary>
+             Cria um novo Livro relacionado com Autor
+             </summary>
+             <remarks>
+             Exemplo:
+            
+                 Copiar este modelo de Json ao Clicar no Try it out
+                 {
+                     "titulo": "string",
+                     "subtitulo": "string",
+                     "quantidadePagina": 0,
+                     "anoPublicacao": 0,
+                     "versao": "string",
+                     "livrosAutores": [
+                         {
+                             "autor": {
+                                 "nome": "string",
+                                 "sobreNome": "string",
+                                 "pais": "string"
+                             }
+                         }
+                     ]
+                 }
+            
+             </remarks>
+             <response code="200">Retorna o novo item criado</response>
+        </member>
+        <member name="M:Livraria.API.Controllers.LivrosController.Put(System.Int32,Livraria.API.Model.Livro)">
+             <summary>
+             Atualiza apenas um livro
+             </summary>
+             <remarks>
+             Exemplo:
+            
+                 Copiar este modelo de Json para atualizar apenas o livro
+                 {
+                     "id": 5,   
+                     "titulo": "Novo Titulo",
+                     "subtitulo": "Novo Subtitulo",
+                     "quantidadePagina": 25,
+                     "anoPublicacao": 25,
+                     "versao": "Nova Versao"
+                 }
+            
+             </remarks>
+        </member>
+    </members>
+</doc>
